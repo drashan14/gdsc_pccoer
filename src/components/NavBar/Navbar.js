@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { MdClose, MdMenu } from 'react-icons/md';
 
 const NavStyles = styled.nav`
-  position: fixed;
+  
   z-index: 100;
   top: 0;
   left: 0;
@@ -136,7 +136,7 @@ export default function NavMenu() {
         </li>
         <li>
           <NavLink
-            to="/team"
+            to="/projects"
             onClick={() => setShowNav(!showNav)}
             role="button"
             onKeyDown={() => setShowNav(!showNav)}
@@ -158,13 +158,13 @@ export default function NavMenu() {
         </li>
         <li>
           <NavLink
-            to="/contact"
+            to="/team"
             onClick={() => setShowNav(!showNav)}
             role="button"
             onKeyDown={() => setShowNav(!showNav)}
             tabIndex={0}
           >
-            Contact
+            Team
           </NavLink>
         </li>
       </ul>
