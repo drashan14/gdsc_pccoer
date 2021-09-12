@@ -56,7 +56,7 @@ export default function ProductSimple() {
                             />
                         </Box>
                         <Stack align={'center'} paddingTop={70}>
-                            <Heading fontSize={35} fontFamily={'body'} fontWeight={750} paddingTop={5}>
+                            <Heading fontSize={35} fontFamily={'body'} fontWeight={750} paddingTop={4}>
                                 Info Session
                             </Heading>
 
