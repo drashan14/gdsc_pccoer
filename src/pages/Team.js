@@ -8,14 +8,14 @@ export default function Team() {
         <div>
 
 <SimpleGrid columns={[1,2,3]} spacing={12} mx="auto" my={0} maxW="900px">
-  <TeamCard name="Doug Judy" position="potniac Bandit" />
-  <TeamCard name="Doug Judy" position="potniac Bandit" />
-  <TeamCard name="Doug Judy" position="potniac Bandit" />
-  <TeamCard name="Doug Judy" position="potniac Bandit" />
-  <TeamCard name="Doug Judy" position="potniac Bandit" />
-  <TeamCard name="Doug Judy" position="potniac Bandit" />
-  <TeamCard name="Doug Judy" position="potniac Bandit" />
-  <TeamCard name="Doug Judy" position="potniac Bandit" />
+  <TeamCard name="Doug Judy" position="potniac Bandit" github="https://github.com/shreerang6921" instagram="https://www.instagram.com/_broken.humor_/"/>
+  <TeamCard name="Doug Judy" position="potniac Bandit" github="https://github.com/shreerang6921" instagram="https://www.instagram.com/_broken.humor_/"/>
+  <TeamCard name="Doug Judy" position="potniac Bandit" github="https://github.com/shreerang6921" instagram="https://www.instagram.com/_broken.humor_/"/>
+  <TeamCard name="Doug Judy" position="potniac Bandit" github="https://github.com/shreerang6921" instagram="https://www.instagram.com/_broken.humor_/"/>
+  <TeamCard name="Doug Judy" position="potniac Bandit" github="https://github.com/shreerang6921" instagram="https://www.instagram.com/_broken.humor_/"/>
+  <TeamCard name="Doug Judy" position="potniac Bandit" github="https://github.com/shreerang6921" instagram="https://www.instagram.com/_broken.humor_/"/>
+  <TeamCard name="Doug Judy" position="potniac Bandit" github="https://github.com/shreerang6921" instagram="https://www.instagram.com/_broken.humor_/"/>
+  <TeamCard name="Doug Judy" position="potniac Bandit" github="https://github.com/shreerang6921" instagram="https://www.instagram.com/_broken.humor_/"/>
 </SimpleGrid>
           
         </div>
