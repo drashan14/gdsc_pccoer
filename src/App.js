@@ -6,10 +6,12 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Events from './pages/Events';
 import Team from './pages/Team';
+import { ChakraProvider } from '@chakra-ui/react';
+
 
 function App()  {
   return (
-  <>
+  <ChakraProvider>
     <Router>
       <Navbar />
       <Switch>
@@ -30,7 +32,7 @@ function App()  {
         </Route>
       </Switch>
     </Router>
-  </>
+  </ChakraProvider>
   );
 }
 
