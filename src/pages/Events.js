@@ -22,7 +22,7 @@ export default function Events() {
                     bgClip="text"
                     fontSize={'calc(40px + (26 - 14) * ((100vw - 300px) / (1600 - 300)))'}
                     fontWeight="extrabold"
-                    padding={"50px 0"}
+                    padding={"100px 0"}
                     pos={'relative'}
                 >
                     Welcome to Events Page

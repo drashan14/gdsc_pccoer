@@ -4,32 +4,34 @@ import styled from 'styled-components';
 import { MdClose, MdMenu } from 'react-icons/md';
 
 const NavStyles = styled.nav`
-  
+  position: fixed;
   z-index: 100;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1rem 0;
-  background: black;
+  padding: 2rem 0;
+  background: #181721;
+
   ul {
     max-width: 1200px;
     margin: 0 auto;
     width: 90%;
-    text-align: center;
+    text-align: right;
     li {
       display: inline-block;
       border-radius: 8px;
       transition: 0.3s ease background-color;
       &:hover {
         background-color: black;
+        border-radius: 40px;
       }
     }
     a {
       display: inline-block;
       font-family: 'RobotoMono Regular';
       padding: 1rem 2rem;
-      font-size: 2rem;
-      color: grey;
+      font-size: 2.3rem;
+      color: white;
       outline: none;
     }
     .active {
@@ -134,17 +136,7 @@ export default function NavMenu() {
             About
           </NavLink>
         </li>
-        <li>
-          <NavLink
-            to="/blogs"
-            onClick={() => setShowNav(!showNav)}
-            role="button"
-            onKeyDown={() => setShowNav(!showNav)}
-            tabIndex={0}
-          >
-            Blogs
-          </NavLink>
-        </li>
+        
         <li>
           <NavLink
             to="/events"
@@ -158,6 +150,17 @@ export default function NavMenu() {
         </li>
         <li>
           <NavLink
+            to="/blogs"
+            onClick={() => setShowNav(!showNav)}
+            role="button"
+            onKeyDown={() => setShowNav(!showNav)}
+            tabIndex={0}
+          >
+            Blogs
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
             to="/team"
             onClick={() => setShowNav(!showNav)}
             role="button"
@@ -165,6 +168,17 @@ export default function NavMenu() {
             tabIndex={0}
           >
             Team
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/contact"
+            onClick={() => setShowNav(!showNav)}
+            role="button"
+            onKeyDown={() => setShowNav(!showNav)}
+            tabIndex={0}
+          >
+            Contact
           </NavLink>
         </li>
       </ul>
