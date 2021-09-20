@@ -4,13 +4,14 @@ import styled from 'styled-components';
 import { MdClose, MdMenu } from 'react-icons/md';
 
 const NavStyles = styled.nav`
-  position: relative;
+  position: fixed;
   z-index: 100;
   top: 0;
   left: 0;
   width: 100%;
   padding: 2rem 0;
   background: #181721;
+
   ul {
     max-width: 1200px;
     margin: 0 auto;

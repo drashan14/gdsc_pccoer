@@ -1,16 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import PText from './PText';
-import HeroImg from '../assets/images/herosectionimg.png';
+import PText from '../components/PText';
+import AboutImg from '../assets/images/herologo.png';
 
 const AboutPageStyles = styled.div`
-    padding-top: 4rem;
-    background-color: #181721;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+  padding: 3rem 0;
   .top-section {
     display: flex;
     align-items: center;
@@ -23,21 +17,24 @@ const AboutPageStyles = styled.div`
   .right {
     flex: 2;
   }
+
   .about__heading {
-    font-size: 3.6rem;
-    margin-top: 1rem;
-    color: white;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    text-align: center;
   }
   .about__info {
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
     .para {
       max-width: 100%;
-      text-align: center;
+    }
+    span{
+      color: white;
     }
   }
   .right {
     img {
-
+      border: 2px solid #181721;
     }
   }
   .about__info__items {
@@ -61,7 +58,6 @@ const AboutPageStyles = styled.div`
     }
     .about__heading {
       font-size: 2.8rem;
-      text-align: center;
     }
     .about__info__heading {
       font-size: 2.5rem;
@@ -75,22 +71,24 @@ export default function About() {
       <div className="container">
         <div className="top-section">
           <div className="left">
-            <h2 className="about__heading">DSC PCCOE&R</h2>
-             <div className="about__info">
+            <h2 className="about__heading">GDSC PCCOE&R</h2>
+            <div className="about__info">
               <PText>
-                <p>Our vision at DSC PCCOE&R is to forge great designers,</p> 
-                <p>deveopers and managers by working on projects and bind </p>
-                <p>them together to shape our society</p> 
-                <p>"Alone we can do solittle, together we can do so much."</p>
-                <p> -- Helen Keller</p>
+                Our vision at DSC PCCOE&R is
+                <br />
+                <span> 'To learn, implement and build solutions that
+                 would enable the students to enrich their knowledge and enable them to make 
+                 a positive impact on the society'</span>
+                <br />
+            
               </PText>
             </div>
           </div>
           <div className="right">
-          <img src={HeroImg} alt="me" />
+            <img src={AboutImg} alt="me" />
           </div>
         </div>
-      </div>
+        </div>
     </AboutPageStyles>
   );
 }
