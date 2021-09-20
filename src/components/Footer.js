@@ -55,7 +55,7 @@ export default function Footer() {
         </div>
         <div className="footer__col2">
           <FooterCol
-            heading="Important Links"
+            heading="Quick Links"
             link={[
               {
                 title: 'Home',
@@ -71,12 +71,7 @@ export default function Footer() {
                 type: 'Link',
                 title: 'Events',
                 path: '/Events',
-              },
-              {
-                type: 'Link',
-                title: 'Contact',
-                path: '/contact',
-              },
+              }
             ]}
           />
         </div>
@@ -85,12 +80,8 @@ export default function Footer() {
             heading="Contact Info"
             links={[
               {
-                title: '+91 9822345806',
-                path: 'tel:+91-9822345806',
-              },
-              {
-                title: 'sunstarsolarshoppe@gmail.com',
-                path: 'mailto:sunstarsolarshoppe@gmail.com',
+                title: 'gdscpccoer@gmail.com',
+                path: 'mailto:gdscpccoer@gmail.com',
               },
               {
                 title: 'Pune, India',
@@ -104,16 +95,20 @@ export default function Footer() {
             heading="Social Links"
             links={[
               {
-                title: 'Facebook',
-                path: 'https://www.facebook.com/niranjan.kangane/',
+                title: 'Instagram',
+                path: 'https://www.instagram.com/gdscpccoer/',
+              },
+              {
+                title: 'Linkdin',
+                path: 'https://www.linkedin.com/company/google-developer-student-clubs-pccoer/mycompany/',
               },
               {
                 title: 'Twitter',
-                path: 'http://twitter.com/niranjantogo',
+                path: 'https://twitter.com/gdsc_pccoer',
               },
               {
-                title: 'Instagram',
-                path: 'http://isntagram.com/niranjan.kangane',
+                title: 'Discord',
+                path: 'https://discord.com/invite/uxWVvmhTYr',
               },
             ]}
           />

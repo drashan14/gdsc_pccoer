@@ -1,6 +1,7 @@
 import { SimpleGrid, Box, Text, Link } from '@chakra-ui/react'
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react"
 import EventCard from '../components/Events&Blogs/EventCard'
+import Footer from '../components/Footer';
 const IMAGE ='./Event1.jpeg';
 
 export default function Events() {
@@ -63,7 +64,7 @@ export default function Events() {
                     </TabPanel>
                 </TabPanels>
             </Tabs> 
-
+            <Footer/>
         </div>
     )
 }

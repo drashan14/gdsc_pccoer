@@ -1,5 +1,6 @@
 import { Box, Text, SimpleGrid, Container } from '@chakra-ui/react';
 import BlogCard from '../components/Events&Blogs/BlogCard'
+import Footer from '../components/Footer';
 const IMAGE ='https://picsum.photos/seed/picsum/300/300';
 
 export default function Blogs() {
@@ -43,6 +44,7 @@ export default function Blogs() {
                     <BlogCard BlogImage={IMAGE} BlogName="ABC" Author="PQR" />
                 </SimpleGrid>
             </Container>
+            <Footer />
         </div>
     )
 }

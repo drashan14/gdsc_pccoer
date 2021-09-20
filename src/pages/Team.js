@@ -1,7 +1,7 @@
 import { SimpleGrid } from '@chakra-ui/react'
 import React from 'react'
 import TeamCard from '../components/TeamCard'
-
+import Footer from '../components/Footer';
 
 export default function Team() {
     return (
@@ -17,7 +17,7 @@ export default function Team() {
   <TeamCard name="Doug Judy" position="potniac Bandit" github="https://github.com/shreerang6921" instagram="https://www.instagram.com/_broken.humor_/"/>
   <TeamCard name="Doug Judy" position="potniac Bandit" github="https://github.com/shreerang6921" instagram="https://www.instagram.com/_broken.humor_/"/>
 </SimpleGrid>
-          
+<Footer/>         
         </div>
     )
 }
