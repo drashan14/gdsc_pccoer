@@ -1,8 +1,9 @@
-import { Box, useColorModeValue, Heading, Text, Stack, Image, Link } from '@chakra-ui/react';
+import { SimpleGrid, Box, Text, Link } from '@chakra-ui/react'
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react"
+import EventCard from '../components/Events&Blogs/EventCard'
 const IMAGE ='./Event1.jpeg';
 
-export default function ProductSimple() {
+export default function Events() {
     return (
         <div style={
             {
@@ -10,7 +11,6 @@ export default function ProductSimple() {
             }
         }>
             <Box
-                marginTop={100}
                 w="100%"
                 h="200px"
                 bgGradient="linear(red.100 0%, orange.100 25%, yellow.100 50%)"
@@ -28,7 +28,7 @@ export default function ProductSimple() {
                     Welcome to Events Page
                 </Text>
             </Box>
-            
+
             <Tabs 
                 align='center' 
                 variant="soft-rounded" 
@@ -46,64 +46,24 @@ export default function ProductSimple() {
 
                 <TabPanels margin={'auto'}>
                     <TabPanel>
-                    <p>Past Events!</p>
-                        <Box
-                            
-                            marginTop={30}
-                            role={'group'}
-                            maxW={'380px'}
-                            bg={useColorModeValue('white', 'gray.800')}
-                            boxShadow={'2xl'}
-                            rounded={'lg'}
-                            pos={'relative'}
-                            align={'center'}
-                        >
-
-                            <Box
-                                pos={'relative'}
-                                height={'300px'}
-                                _after={{
-                                    pos: 'absolute',
-                                    top: 5,
-                                    left: 0,
-                                    backgroundImage: `url(${IMAGE})`,
-                                    filter: 'blur(15px)',
-                                    zIndex: -1,
-                                }}
-                            >
-                                <Image
-                                    rounded={'lg'}
-                                    marginTop={25}
-                                    align={'center'}
-                                    src={IMAGE}
-                                />
-                            </Box>
-                            <Stack align={'center'} paddingTop={70}>
-                                <Heading fontSize={35} fontFamily={'body'} fontWeight={750} paddingTop={4}>
-                                    Info Session
-                                </Heading>
-
-                                <Text color={'gray.500'} fontSize={20} textTransform={'uppercase'}>
-                                    Thursday, September 9 2021
-                                </Text>
-                                
-                                <Text>
-                                    <Link color="teal.500" href='#'>Find More</Link>
-                                </Text>
-                                
-                                {/* <Stack direction={'row'} align={'center'}>
-                                    <Text fontWeight={800} fontSize={'xl'}>
-                                        PQR
-                                    </Text>
-                                </Stack> */}
-                            </Stack>
-                        </Box>
-                </TabPanel>
+                        <p>Past Events!</p>
+                        <SimpleGrid columns={[1,2,3,3]} spacing={5} mx="auto" my={0} maxW="1500px" paddingTop={'50px'}>
+                            <EventCard EventImage={IMAGE} EventName="Info Session" Date="Thursday, September 9 2021" />
+                            <EventCard EventImage={''} EventName="ABC" Date="PQR" />
+                            <EventCard EventImage={''} EventName="ABC" Date="PQR" />
+                        </SimpleGrid>
+                    </TabPanel>
                     <TabPanel>
-                    <p>Upcoming Events!</p>
+                        <p>Upcoming Events!</p>
+                        <SimpleGrid columns={[1,2,3,3]} spacing={5} mx="auto" my={0} maxW="1500px">
+                            <EventCard EventImage={''} EventName="ABC" Date="PQR" />
+                            <EventCard EventImage={''} EventName="ABC" Date="PQR" />
+                            <EventCard EventImage={''} EventName="ABC" Date="PQR" />
+                        </SimpleGrid>
                     </TabPanel>
                 </TabPanels>
             </Tabs> 
-        </div> 
-    );
+
+        </div>
+    )
 }
