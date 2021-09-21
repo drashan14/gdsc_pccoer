@@ -18,12 +18,13 @@ const Blog = (props) => {
                 pos={'relative'}
             >
                 <Text
+                    marginTop={"90px"}
                     textAlign={'center'}
                     bgGradient="linear(to-l, #7928CA,#FF0080)"
                     bgClip="text"
                     fontSize={'calc(40px + (26 - 14) * ((100vw - 300px) / (1600 - 300)))'}
                     fontWeight="extrabold"
-                    padding={"100px 0"}
+                    padding={"50px 0"}
                     pos={'relative'}
                 >
                     Blog

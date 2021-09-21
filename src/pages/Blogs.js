@@ -1,13 +1,13 @@
 import { Box, Text, SimpleGrid, Container } from '@chakra-ui/react';
 import BlogCard from '../components/Events&Blogs/BlogCard'
 import Footer from '../components/Footer';
-const IMAGE ='https://picsum.photos/seed/picsum/300/300';
+const IMAGE = 'https://picsum.photos/seed/picsum/300/300';
 
 export default function Blogs() {
     return (
         <div style={
             {
-                overflow:'hidden'
+                overflow: 'hidden'
             }
         }>
             <Box
@@ -17,26 +17,27 @@ export default function Blogs() {
                 pos={'relative'}
             >
                 <Text
+                    marginTop={"90px"}
                     textAlign={'center'}
                     bgGradient="linear(to-l, #7928CA,#FF0080)"
                     bgClip="text"
                     fontSize={'calc(40px + (26 - 14) * ((100vw - 300px) / (1600 - 300)))'}
                     fontWeight="extrabold"
-                    padding={"100px 0"}
+                    padding={["25px","50px"]}
                     pos={'relative'}
                 >
                     Have you read our blogs?
                 </Text>
             </Box>
-            <Container maxWidth="7xl" overflow={'hidden'} >
-                <SimpleGrid 
-                    columns={[1,2,2]} 
-                    spacing={5} 
-                    mx="auto" 
-                    my={10} 
-                    justifyContent={'space-evenly'} 
-                    maxHeight='100%' 
-                    maxWidth='100%' 
+            <Container maxWidth="8xl" overflow={'hidden'} paddingBottom={'100px'} >
+                <SimpleGrid
+                    columns={[1, 2, 2]}
+                    spacing={50}
+                    mx="auto"
+                    my={10}
+                    justifyContent={'space-evenly'}
+                    maxHeight='100%'
+                    maxWidth='100%'
                     overflow={'hidden'}
                 >
                     <BlogCard BlogImage={IMAGE} BlogName="ABC" Author="PQR" />
