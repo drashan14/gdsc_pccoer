@@ -29,7 +29,8 @@ export default function BlogCard({ BlogImage, BlogName, Author }) {
                             <Text color={'gray.500'} fontSize={20} textTransform={'uppercase'}>
                                 {Author}
                             </Text>
-                            <Text mt={2} color="gray.500">
+                            <Text mt={2} color="gray.500" fontSize={12}>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, fuga.
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, fuga.
                             </Text>
                         </Box>

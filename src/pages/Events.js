@@ -2,7 +2,7 @@ import { SimpleGrid, Box, Text, Link } from '@chakra-ui/react'
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react"
 import EventCard from '../components/Events&Blogs/EventCard'
 import Footer from '../components/Footer';
-const IMAGE = './Event1.jpeg';
+import IMAGE from '../assets/images/Event1.jpeg'
 
 export default function Events() {
     return (
@@ -41,28 +41,30 @@ export default function Events() {
                 paddingBottom={'100px'}
             >
                 <TabList>
-                    <Tab>
+                    <Tab fontSize={15}>
                         <Link>Past Events</Link>
                     </Tab>
-                    <Tab>Upcoming Events</Tab>
+                    <Tab fontSize={15}>
+                        <Link>Upcoming Events</Link>
+                    </Tab>
                 </TabList>
 
                 <TabPanels margin={'auto'}>
                     <TabPanel>
                         <p>Past Events!</p>
-                        <SimpleGrid columns={[1, 2, 3, 3]} spacing={5} mx="auto" my={0} maxW="1500px" paddingTop={'50px'}>
+                        {/* <SimpleGrid columns={[1, 2, 3, 3]} spacing={5} mx="auto" my={0} maxW="1500px" paddingTop={'50px'}> */}
                             <EventCard EventImage={IMAGE} EventName="Info Session" Date="Thursday, September 9 2021" CommunityLink="https://gdsc.community.dev/events/details/developer-student-clubs-pimpri-chinchwad-college-of-engineering-and-research-pune-presents-google-developer-student-clubs-pccoer-information-session/" />
-                            <EventCard EventImage={''} EventName="ABC" Date="PQR" CommunityLink="#" />
-                            <EventCard EventImage={''} EventName="ABC" Date="PQR" CommunityLink="#"/>
-                        </SimpleGrid>
+                            {/* <EventCard EventImage={''} EventName="ABC" Date="PQR" CommunityLink="#" />
+                            <EventCard EventImage={''} EventName="ABC" Date="PQR" CommunityLink="#"/> */}
+                        {/* </SimpleGrid> */}
                     </TabPanel>
                     <TabPanel>
                         <p>Upcoming Events!</p>
-                        <SimpleGrid columns={[1, 2, 3, 3]} spacing={5} mx="auto" my={0} maxW="1500px">
-                            <EventCard EventImage={''} EventName="ABC" Date="PQR" CommunityLink="#"/>
-                            <EventCard EventImage={''} EventName="ABC" Date="PQR" CommunityLink="#"/>
-                            <EventCard EventImage={''} EventName="ABC" Date="PQR" CommunityLink="#"/>
-                        </SimpleGrid>
+                        {/* <SimpleGrid columns={[1, 2, 3, 3]} spacing={5} mx="auto" my={0} maxW="1500px"> */}
+                            <EventCard EventImage={''} EventName="30 Days of Google Cloud - Info Session" Date="Wednesday, September 22 2021, 5:15 PM (IST)" CommunityLink="https://gdsc.community.dev/events/details/developer-student-clubs-pimpri-chinchwad-college-of-engineering-and-research-pune-presents-30-days-of-google-cloud-info-session/"/>
+                            {/* <EventCard EventImage={''} EventName="ABC" Date="PQR" CommunityLink="#"/>
+                            <EventCard EventImage={''} EventName="ABC" Date="PQR" CommunityLink="#"/> */}
+                        {/* </SimpleGrid> */}
                     </TabPanel>
                 </TabPanels>
             </Tabs>

@@ -29,18 +29,17 @@ export default function Blogs() {
                     Have you read our blogs?
                 </Text>
             </Box>
-            <Container maxWidth="8xl" overflow={'hidden'} paddingBottom={'100px'} >
+            <Container maxWidth="9xl" overflow={'hidden'} paddingBottom={'100px'} >
                 <SimpleGrid
                     columns={[1, 2, 2]}
-                    spacing={50}
+                    spacing={0}
                     mx="auto"
                     my={10}
                     justifyContent={'space-evenly'}
                     maxHeight='100%'
-                    maxWidth='100%'
+                    maxWidth='80%'
                     overflow={'hidden'}
                 >
-                    <BlogCard BlogImage={IMAGE} BlogName="ABC" Author="PQR" />
                     <BlogCard BlogImage={IMAGE} BlogName="ABC" Author="PQR" />
                     <BlogCard BlogImage={IMAGE} BlogName="ABC" Author="PQR" />
                 </SimpleGrid>

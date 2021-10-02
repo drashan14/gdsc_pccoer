@@ -3,7 +3,8 @@ import {Container, Text } from '@chakra-ui/layout'
 
 export default function EventCard({EventImage, EventName, Date, CommunityLink }) {
     return (
-        <Container rounded="lg" boxShadow="lg" overflow={'hidden'}>
+        // <Container rounded="lg" boxShadow="lg" overflow={'hidden'}>
+        <Container rounded="lg" overflow={'hidden'}>
             <Box
                 marginTop={30}
                 marginBottom={30}
