@@ -4,7 +4,7 @@ import {Container, Text } from '@chakra-ui/layout'
 export default function EventCard({EventImage, EventName, Date, CommunityLink }) {
     return (
         // <Container rounded="lg" boxShadow="lg" overflow={'hidden'}>
-        <Container rounded="lg" overflow={'hidden'}>
+        <Container rounded="lg" overflow={'hidden'} display='flex' height={'100%'}>
             <Box
                 marginTop={30}
                 marginBottom={30}
@@ -25,7 +25,7 @@ export default function EventCard({EventImage, EventName, Date, CommunityLink })
                     />
                 </Box>
 
-                <Box align={'center'} paddingTop={5} pos={'relative'} overflow={'hidden'}>
+                <Box align={'center'} paddingTop={'20%'} pos={'relative'} overflow={'hidden'}>
                     <Heading color={'black'} fontSize={'5xl'} fontFamily={'body'} fontWeight={500}>
                         {EventName}
                     </Heading>

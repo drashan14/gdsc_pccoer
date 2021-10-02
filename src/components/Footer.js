@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import FooterCol from './FooterCol';
 import PText from './PText';
+import { FaInstagram } from "react-icons/fa";
+
 
 const FooterStyle = styled.div`
   background-color: #181721;
@@ -64,11 +66,6 @@ export default function Footer() {
               },
               {
                 type: 'Link',
-                title: 'About',
-                path: '/about',
-              },
-              {
-                type: 'Link',
                 title: 'Events',
                 path: '/Events',
               }
@@ -95,6 +92,7 @@ export default function Footer() {
             heading="Social Links"
             links={[
               {
+                icons: { FaInstagram },
                 title: 'Instagram',
                 path: 'https://www.instagram.com/gdscpccoer/',
               },

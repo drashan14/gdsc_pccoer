@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { MdClose, MdMenu } from 'react-icons/md';
 
+
 const NavStyles = styled.nav`
   position: fixed;
   z-index: 100;
@@ -11,6 +12,7 @@ const NavStyles = styled.nav`
   width: 100%;
   padding: 2rem 0;
   background: #181721;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 
   ul {
     max-width: 1200px;
@@ -28,7 +30,7 @@ const NavStyles = styled.nav`
     }
     a {
       display: inline-block;
-      font-family: 'RobotoMono Regular';
+  
       padding: 1rem 2rem;
       font-size: 2.3rem;
       color: white;
@@ -102,6 +104,7 @@ export default function NavMenu() {
       >
         <MdMenu />
       </div>
+  
 
       <ul className={!showNav ? 'navItems hide-item' : 'navItems'}>
         <div
@@ -125,18 +128,6 @@ export default function NavMenu() {
             Home
           </NavLink>
         </li>
-        <li>
-          <NavLink
-            to="/about"
-            onClick={() => setShowNav(!showNav)}
-            role="button"
-            onKeyDown={() => setShowNav(!showNav)}
-            tabIndex={0}
-          >
-            About
-          </NavLink>
-        </li>
-        
         <li>
           <NavLink
             to="/events"
@@ -170,17 +161,7 @@ export default function NavMenu() {
             Team
           </NavLink>
         </li>
-        <li>
-          <NavLink
-            to="/contact"
-            onClick={() => setShowNav(!showNav)}
-            role="button"
-            onKeyDown={() => setShowNav(!showNav)}
-            tabIndex={0}
-          >
-            Contact
-          </NavLink>
-        </li>
+    
       </ul>
     </NavStyles>
   );

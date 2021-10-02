@@ -17,7 +17,7 @@ export default function Blogs() {
                 pos={'relative'}
             >
                 <Text
-                    marginTop={"90px"}
+                    marginTop={"80px"}
                     textAlign={'center'}
                     bgGradient="linear(to-l, #7928CA,#FF0080)"
                     bgClip="text"

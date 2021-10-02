@@ -2,7 +2,8 @@ import { SimpleGrid, Box, Text, Link } from '@chakra-ui/react'
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react"
 import EventCard from '../components/Events&Blogs/EventCard'
 import Footer from '../components/Footer';
-import IMAGE from '../assets/images/Event1.jpeg'
+import IMAGE1 from '../assets/images/Event1.jpeg'
+import IMAGE2 from '../assets/images/30 Days of Cloud Info Session.jpeg'
 
 export default function Events() {
     return (
@@ -18,7 +19,7 @@ export default function Events() {
                 pos={'relative'}
             >
                 <Text
-                    marginTop={"90px"}
+                    marginTop={"80px"}
                     textAlign={'center'}
                     bgGradient="linear(to-l, #7928CA,#FF0080)"
                     bgClip="text"
@@ -53,15 +54,15 @@ export default function Events() {
                     <TabPanel>
                         <p>Past Events!</p>
                         {/* <SimpleGrid columns={[1, 2, 3, 3]} spacing={5} mx="auto" my={0} maxW="1500px" paddingTop={'50px'}> */}
-                            <EventCard EventImage={IMAGE} EventName="Info Session" Date="Thursday, September 9 2021" CommunityLink="https://gdsc.community.dev/events/details/developer-student-clubs-pimpri-chinchwad-college-of-engineering-and-research-pune-presents-google-developer-student-clubs-pccoer-information-session/" />
-                            {/* <EventCard EventImage={''} EventName="ABC" Date="PQR" CommunityLink="#" />
-                            <EventCard EventImage={''} EventName="ABC" Date="PQR" CommunityLink="#"/> */}
-                        {/* </SimpleGrid> */}
+                        <SimpleGrid columns={[1, 2, 2, 2]} spacing={5} mx="auto" my={0} maxW="1000px" paddingTop={'50px'}>
+                            <EventCard EventImage={IMAGE1} EventName="Info Session" Date="Thursday, September 9 2021" CommunityLink="https://gdsc.community.dev/events/details/developer-student-clubs-pimpri-chinchwad-college-of-engineering-and-research-pune-presents-google-developer-student-clubs-pccoer-information-session/" />
+                            <EventCard EventImage={IMAGE2} EventName="30 Days of Google Cloud - Info Session" Date="Wednesday, September 22 2021, 5:15 PM (IST)" CommunityLink="https://gdsc.community.dev/events/details/developer-student-clubs-pimpri-chinchwad-college-of-engineering-and-research-pune-presents-30-days-of-google-cloud-info-session/"/>
+                            {/* <EventCard EventImage={''} EventName="ABC" Date="PQR" CommunityLink="#" /> */}
+                        </SimpleGrid>
                     </TabPanel>
                     <TabPanel>
                         <p>Upcoming Events!</p>
                         {/* <SimpleGrid columns={[1, 2, 3, 3]} spacing={5} mx="auto" my={0} maxW="1500px"> */}
-                            <EventCard EventImage={''} EventName="30 Days of Google Cloud - Info Session" Date="Wednesday, September 22 2021, 5:15 PM (IST)" CommunityLink="https://gdsc.community.dev/events/details/developer-student-clubs-pimpri-chinchwad-college-of-engineering-and-research-pune-presents-30-days-of-google-cloud-info-session/"/>
                             {/* <EventCard EventImage={''} EventName="ABC" Date="PQR" CommunityLink="#"/>
                             <EventCard EventImage={''} EventName="ABC" Date="PQR" CommunityLink="#"/> */}
                         {/* </SimpleGrid> */}
