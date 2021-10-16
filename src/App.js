@@ -8,7 +8,6 @@ import Events from './pages/Events';
 import Team from './pages/Team';
 import { ChakraProvider } from '@chakra-ui/react';
 
-
 function App() {
     return (
         <ChakraProvider>

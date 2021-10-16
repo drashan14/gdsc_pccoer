@@ -42,10 +42,10 @@ export default function Events() {
                 paddingBottom={'100px'}
             >
                 <TabList>
-                    <Tab fontSize={15}>
+                    <Tab fontSize={20}>
                         <Link>Past Events</Link>
                     </Tab>
-                    <Tab fontSize={15}>
+                    <Tab fontSize={20}>
                         <Link>Upcoming Events</Link>
                     </Tab>
                 </TabList>

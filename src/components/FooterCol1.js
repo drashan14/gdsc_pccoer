@@ -24,7 +24,7 @@ export default function ServicesSectionItem({
 }) {
   return (
     <ColStyles>
-      <div className="serviceItem__icon">{icon}</div>>
+      <div className="serviceItem__icon">{icon}</div>
     </ColStyles>
   );
 }

@@ -6,14 +6,14 @@ import reportWebVitals from './reportWebVitals';
 import { ChakraProvider } from "@chakra-ui/react";
 import GlobalStyles from './styles/GlobalStyles';
 import Typography from './styles/Typography';
-import Toggle from './components/Toggle';
+// import Toggle from './components/Toggle';
 
 ReactDOM.render(
-    <ChakraProvider>
+    <ChakraProvider >
         <GlobalStyles />
         <Typography />
         <App />
-        <Toggle />
+        {/* <Toggle /> */}
     </ChakraProvider>,
     document.getElementById('root')
     );
