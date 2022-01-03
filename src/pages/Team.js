@@ -1,8 +1,9 @@
-import { SimpleGrid, Box } from '@chakra-ui/react'
+import { SimpleGrid } from '@chakra-ui/react'
 import React from 'react'
 import TeamCard from '../components/TeamCard'
 import Teams from '../components/Teams'
 
+import Footer from '../components/Footer';
 
 export default function Team() {
     return (

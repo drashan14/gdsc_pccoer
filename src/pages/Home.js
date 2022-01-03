@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import HeroSection from '../components/HeroSection';
+import Footer from '../components/Footer';
 
 export default function Home() {
-    return (
-        <div>
-          <h1>This is Home Section</h1>
-        </div>
-    )
+  return (
+    <div>
+      <HeroSection />
+      <Footer />
+    </div>
+  );
 }
