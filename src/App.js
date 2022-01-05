@@ -8,32 +8,31 @@ import Events from './pages/Events';
 import Team from './pages/Team';
 import { ChakraProvider } from '@chakra-ui/react';
 
-
-function App()  {
-  return (
-  <ChakraProvider>
-    <Router>
-      <Navbar />
-      <Switch>
-        <Route path="/team">
-          <Team />
-        </Route>
-        <Route path="/events">
-          <Events />
-        </Route>
-        <Route path="/Blogs">
-          <Blogs />
-        </Route>
-        <Route path="/Blog">
-          <Blog />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
-    </Router>
-  </ChakraProvider>
-  );
+function App() {
+    return (
+        <ChakraProvider>
+            <Router>
+                <Navbar />zzz
+                <Switch>
+                    <Route path="/team">
+                        <Team />
+                    </Route>
+                    <Route path="/events">
+                        <Events />
+                    </Route>
+                    <Route path="/Blogs">
+                        <Blogs />
+                    </Route>
+                    <Route path="/Blog">
+                        <Blog />
+                    </Route>
+                    <Route path="/">
+                        <Home />
+                    </Route>
+                </Switch>
+            </Router>
+        </ChakraProvider>
+    );
 }
 
 export default App;

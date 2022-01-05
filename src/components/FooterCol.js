@@ -25,8 +25,8 @@ export default function FooterCol({
     },
     {
       type: 'Link',
-      title: 'About',
-      path: '/about',
+      title: 'Team',
+      path: '/Team',
     },
   ],
 }) {

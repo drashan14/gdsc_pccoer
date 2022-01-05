@@ -1,10 +1,10 @@
 import { Box, useColorModeValue, Heading, Stack, Image, Link, Button } from '@chakra-ui/react';
 import {Container, Text } from '@chakra-ui/layout'
 
-export default function EventCard({EventImage, EventName, Date, CommunityLink }) {
+export default function EventCard({EventImage, EventName, Date, CommunityLink, BlogLink }) {
     return (
         // <Container rounded="lg" boxShadow="lg" overflow={'hidden'}>
-        <Container rounded="lg" overflow={'hidden'}>
+        <Container rounded="lg" overflow={'hidden'} display='flex' height={'100%'}>
             <Box
                 marginTop={30}
                 marginBottom={30}
@@ -25,7 +25,7 @@ export default function EventCard({EventImage, EventName, Date, CommunityLink })
                     />
                 </Box>
 
-                <Box align={'center'} paddingTop={5} pos={'relative'} overflow={'hidden'}>
+                <Box align={'center'} paddingTop={'20%'} pos={'relative'} overflow={'hidden'}>
                     <Heading color={'black'} fontSize={'5xl'} fontFamily={'body'} fontWeight={500}>
                         {EventName}
                     </Heading>
@@ -36,7 +36,7 @@ export default function EventCard({EventImage, EventName, Date, CommunityLink })
                     </Box>
                     
                     <Stack flex={1} alignItems={'center'} justifyContent={'center'} pos='relative' direction='row' spacing={10}>
-                        <Link href="/blogs">
+                        <Link href={BlogLink}>
                             <Button colorScheme="teal" variant="solid" size="lg" >
                                 Read More On Blog
                             </Button>

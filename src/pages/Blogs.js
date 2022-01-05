@@ -1,7 +1,8 @@
 import { Box, Text, SimpleGrid, Container } from '@chakra-ui/react';
 import BlogCard from '../components/Events&Blogs/BlogCard'
 import Footer from '../components/Footer';
-const IMAGE = 'https://picsum.photos/seed/picsum/300/300';
+import IMAGE1 from '../assets/images/GDSC LOGO.jpeg';
+import IMAGE2 from '../assets/images/Google-Cloud-Logo.png';
 
 export default function Blogs() {
     return (
@@ -17,7 +18,7 @@ export default function Blogs() {
                 pos={'relative'}
             >
                 <Text
-                    marginTop={"90px"}
+                    marginTop={"80px"}
                     textAlign={'center'}
                     bgGradient="linear(to-l, #7928CA,#FF0080)"
                     bgClip="text"
@@ -40,8 +41,9 @@ export default function Blogs() {
                     maxWidth='80%'
                     overflow={'hidden'}
                 >
-                    <BlogCard BlogImage={IMAGE} BlogName="ABC" Author="PQR" />
-                    <BlogCard BlogImage={IMAGE} BlogName="ABC" Author="PQR" />
+                    <BlogCard BlogImage={IMAGE2} BlogName="Things You must know before starting 30 days of Google Cloud" Author="Shivam Barke" BlogLink="https://medium.com/@sbarke236/things-you-must-know-before-starting-30-days-of-google-cloud-8aa217de51d" />
+                    <BlogCard BlogImage={IMAGE1} BlogName="INFO SESSION : GDSC PCCOER" Author="Shivam Barke" BlogLink="https://medium.com/@sbarke236/lively-info-session-55890419c8ee"/>
+                    <BlogCard BlogImage={IMAGE1} BlogName="What is GDSC?" Author="Vishakha Badgujar" BlogLink="https://medium.com/@badgujarvishakha/what-is-gdsc-6fcf78e34421"/>
                 </SimpleGrid>
             </Container>
             <Footer />

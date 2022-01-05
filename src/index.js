@@ -6,12 +6,14 @@ import App from './App';
 import { ChakraProvider } from "@chakra-ui/react";
 import GlobalStyles from './styles/GlobalStyles';
 import Typography from './styles/Typography';
+// import Toggle from './components/Toggle';
 
 ReactDOM.render(
-    <ChakraProvider>
+    <ChakraProvider >
         <GlobalStyles />
         <Typography />
         <App />
+        {/* <Toggle /> */}
     </ChakraProvider>,
     document.getElementById('root')
     );
