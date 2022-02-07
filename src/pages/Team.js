@@ -31,7 +31,7 @@ export default function Team() {
 <Teams name="flutter" teamNumber="9"/>
 <Teams name="cloud" teamNumber="10"/>
 <Teams name="ML" teamNumber="11"/>
-          
+<Footer/>
         </div>
     )
 }
