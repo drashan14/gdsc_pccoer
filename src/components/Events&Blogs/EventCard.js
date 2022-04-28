@@ -25,7 +25,7 @@ export default function EventCard({EventImage, EventName, Date, CommunityLink, B
                     />
                 </Box>
 
-                <Box align={'center'} paddingTop={'20%'} pos={'relative'} overflow={'hidden'}>
+                <Box align={'center'} paddingTop={'25%'} pos={'relative'} overflow={'hidden'}>
                     <Heading color={'black'} fontSize={'5xl'} fontFamily={'body'} fontWeight={500}>
                         {EventName}
                     </Heading>
