@@ -6,6 +6,7 @@ import Blogs from './pages/Blogs';
 import Blog from './pages/Blog';
 import Events from './pages/Events';
 import Team from './pages/Team';
+import Roles from './pages/Roles';
 import { ChakraProvider } from '@chakra-ui/react';
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
                     </Route>
                     <Route path="/Blog">
                         <Blog />
+                    </Route>
+                    <Route path="/Roles">
+                        <Roles />
                     </Route>
                     <Route path="/">
                         <Home />

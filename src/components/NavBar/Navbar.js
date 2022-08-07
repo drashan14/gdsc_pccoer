@@ -161,6 +161,17 @@ export default function NavMenu() {
             Team
           </NavLink>
         </li>
+        <li>
+          <NavLink
+            to="/roles"
+            onClick={() => setShowNav(!showNav)}
+            role="button"
+            onKeyDown={() => setShowNav(!showNav)}
+            tabIndex={0}
+          >
+            Roles
+          </NavLink>
+        </li>
     
       </ul>
     </NavStyles>
